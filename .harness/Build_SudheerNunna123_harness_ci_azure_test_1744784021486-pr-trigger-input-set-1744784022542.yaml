@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_SudheerNunna123_harness_ci_azure_test_1744784021486-pr-trigger-input-set
+  identifier: Build_SudheerNunna123_harness_ci_azure_test_1744784021486prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: HarnessCI
+  pipeline:
+    identifier: Build_SudheerNunna123_harness_ci_azure_test_1744784021486
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
