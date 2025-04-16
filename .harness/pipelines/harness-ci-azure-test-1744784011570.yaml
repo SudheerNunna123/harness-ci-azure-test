@@ -1,0 +1,35 @@
+pipeline:
+  identifier: Build_SudheerNunna123_harness_ci_azure_test_1744784021486
+  name: Build harness-ci-azure-test
+  orgIdentifier: default
+  projectIdentifier: HarnessCI
+  properties:
+    ci:
+      codebase:
+        build: <+input>
+        connectorRef: account.Github
+        repoName: SudheerNunna123/harness-ci-azure-test
+  stages:
+    - stage:
+        identifier: build
+        name: build
+        spec:
+          caching:
+            enabled: true
+          cloneCodebase: true
+          execution:
+            steps:
+              - step:
+                  identifier: echo
+                  name: echo
+                  spec:
+                    command: echo hello world
+                  timeout: ""
+                  type: Run
+          platform:
+            arch: Amd64
+            os: Linux
+          runtime:
+            spec: {}
+            type: Cloud
+        type: CI
