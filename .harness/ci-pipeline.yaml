@@ -1,13 +1,13 @@
 pipeline:
   name: azure-devops-auth-test
   identifier: azure_devops_auth_test
-  projectIdentifier: your_project
-  orgIdentifier: your_org
+  projectIdentifier: HarnessCI
+  orgIdentifier: default
   properties:
     ci:
       codebase:
-        connectorRef: github_connector
-        repoName: harness-ci-azure-test
+        connectorRef: account.github
+        repoName: SudheerNunna123/harness-ci-azure-test
         build:
           type: branch
           spec:
